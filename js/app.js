@@ -15,6 +15,7 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src='${product.image}'></img>
       </div>
+      
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
       <h4><i class="fas fa-star rating"></i> ${product.rating.rate} (${product.rating.count} peoples)</h4>
