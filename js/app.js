@@ -39,8 +39,8 @@ let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
   updatePrice("price", price);
-  updateTotal();
   updateTaxAndCharge();
+  updateTotal();
   document.getElementById("total-Products").innerText = count;
 };
 
@@ -70,8 +70,6 @@ const updatePrice = (id, value) => {
 const setInnerText = (id, value) => {
   document.getElementById(id).innerText = parseFloat(value).toFixed(2);
 };
-
-
 // ----------------------------------------------
 //      update delivery charge and total Tax
 //  ----------------------------------------------
