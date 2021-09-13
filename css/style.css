@@ -1,7 +1,9 @@
+/* ------------- common css ----------- */
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/*--------------- header part ------------ */
 header h1{
   text-align: center;
 }
@@ -11,6 +13,7 @@ header h1{
 
 }
 
+/*------------------ search input field ----------------- */
  .search-field {
   border: none;
   border-radius: 50px;
@@ -35,6 +38,8 @@ header h1{
   border-radius: 25px;
   margin-left: 50px;
 } 
+
+/*--------------- product section -------------- */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -67,6 +72,11 @@ header h1{
   width: 150px;
   height: 150px;
 }
+.rating{
+  color:tomato;
+}
+
+/* product------------- side cart section ---------------- */
 .cart {
   width: 350px;
   /* border: 1px solid green; */
@@ -80,9 +90,9 @@ header h1{
 .cart-main {
   padding-right: 30px;
 }
-.rating{
-  color:tomato;
-}
+
+
+/*------------------- media quarys --------------------- */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
